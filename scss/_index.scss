@@ -209,7 +209,76 @@
 
 }
 
-
-
-
 //----/----/----/Bamboo/---/----/----//
+
+
+//----/----/----/MENU/---/----/----//
+#menuUno{
+    background-image: url('../img/oriental 2.jpg');
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 400px;
+    width: auto;  
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    align-items:center;
+    align-content:center;
+
+    .txtMenuUno{
+        margin-left: 30px;
+        font-family: Ubuntu;
+        color: white;
+        font-size: 30px;
+
+        .txtPersonal{
+            margin-left: 100px;
+            font-family: Kaushan Script;
+            color: white;
+            font-size: 25px;
+        }
+        .botonUno{
+            margin-left: 250px;
+        }
+    }
+}
+
+#menuBamboo{
+    margin-top: 20px;
+    background-image: url('../img/oriental 6.jpg');
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    height: 400px;
+    width: auto;  
+
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+    align-items:center;
+    align-content:center;
+
+    .txtBamboo{
+        margin-left: 50px;
+        font-family: Ubuntu;
+        color: black;
+        font-size: 40px;
+    }
+
+    .txtIngBamboo{
+        margin-right: 200px; 
+        width: 300px;
+        font-family: Kaushan Script;
+        color: black;
+        font-size: 25px;
+    }
+
+    .botonDos{
+        margin-left: 100px;
+    }
+
+}
+//----/----/----/MENU/---/----/----//
