@@ -14,7 +14,7 @@
 .nav-link{
     font-family: Kaushan Script;
     color: white;
-    font-size: 10px;
+    font-size: 15px;
 
 }
 
@@ -328,9 +328,6 @@
         }   
     }
 
-
-
-
     .txtPanbu{
         font-size: 30px;
         text-align: center;
@@ -344,7 +341,6 @@
             color: white;
         } 
     }
-
 }
 
 //----/----/----/Bamboo/---/----/----//
@@ -365,20 +361,43 @@
     align-items:center;
     align-content:center;
 
+    @media (max-width: 450px){	  
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+        align-content:center;
+    }	
+
     .txtMenuUno{
         margin-left: 30px;
         font-family: Ubuntu;
         color: white;
         font-size: 30px;
 
+        @media (max-width: 450px){	  
+            align-items: center; 
+        }	
+
         .txtPersonal{
             margin-left: 100px;
             font-family: Kaushan Script;
             color: white;
             font-size: 25px;
+
+            @media (max-width: 450px){
+                margin-left: 0px;	  
+                align-items: center; 
+            }	
         }
         .botonUno{
             margin-left: 250px;
+
+            @media (max-width: 450px){
+                margin-left: 20px;	  
+                
+            }
         }
     }
 }
@@ -399,19 +418,38 @@
     align-items:center;
     align-content:center;
 
+    @media (max-width: 450px){
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+        align-content:flex-end;
+          
+    }
+
     .txtBamboo{
         margin-left: 50px;
         font-family: Ubuntu;
         color: black;
         font-size: 40px;
+
+        @media (max-width: 450px){
+            margin-left: 300px;   
+        }
     }
 
     .txtIngBamboo{
-        margin-right: 200px; 
-        width: 300px;
+        margin-left: 280px;
+        
         font-family: Kaushan Script;
         color: black;
-        font-size: 25px;
+        
+        padding-top: 10px;
+        font-size: 20px;
+        width: 200px;
+
+       
     }
 
     .botonDos{
@@ -434,6 +472,7 @@
     align-items:center;
     align-content:center;
 
+    
     .txtBanh{
         margin-left: 300px;
         font-family: Ubuntu;
