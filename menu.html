@@ -1,7 +1,6 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
 <html>
-    <head>  
+  <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -10,114 +9,184 @@
         <script src="https://kit.fontawesome.com/70df5b46b1.js" crossorigin="anonymous"></script>
         <!-- LINK FONTASOME -->
         <title>Bamboo</title>
-    </head>
-        <body>
-            <!-- NAVBAR -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-                <div class="container-fluid ">
-                  <a class="navbar-brand" href="index.html">BAMBOO</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="index.html">NOSOTROS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="menu.html">MENU</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">CONTACTO</a>
-                      </li>
-                    
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-            <!-- NAVBAR -->
-            <div id="menuUno">
-                <div class="txtMenuUno">
-                    <p>Selecciona tu Wok, Escoge los sabores a tu gusto...!</p>
-                    <p class="txtPersonal">Personaliza tu bowl como mas te gusta.</p>
-                    <button type="button" class="botonUno btn btn-outline-secondary">Menú</button>
-                </div>
-            </div>
+  </head>
+<body>
+  <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="index.html">BAMBOO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="menu.html">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <!-- NAVBAR -->
 
-            <div id="menuBamboo">
-                <div class="txtMenuBamboo">
-                    <p class="txtBamboo">BAMBOO</p>
-                    <p class="txtIngBamboo">Vegetales Salteados con pollo y camarones al wok con salsa shitake, salsa soya y ajo.</p>
-                    <button type="button" class="botonDos btn btn-outline-secondary">Agregar</button>
-                </div>
-            </div>
 
-            <div id="menuBanh">
-              <div class="txtMenuBanh">
-                  <p class="txtBanh">BANH</p>
-                  <p class="txtIngBanh">Variedad de zetas con carne de langosta a la parilla cebollin oriental,salsa de miel y aceite de oliva.</p>
-                  <button type="button" class="botonTres btn btn-outline-secondary">Agregar</button>
-              </div>
-            </div>
 
-            <div id="menuSalad">
-              <div class="txtMenuSalad">
-                  <p class="txtSalad">SALAD</p>
-                  <p class="txtIngSalad">Plato thai con verduras y tofu con base de pasta de arroz, raiz china, tamarindo y mani tostado.</p>
-                  <button type="button" class="botonCuatro btn btn-outline-secondary">Agregar</button>
-              </div>
-            </div>
+  <!-- FORMULARIO DE CONTACTO -->
+  <div class="contact_form">
 
-            <div class="bebidas">Bebidas e Infusiones.</div>
+    <div class="formulario">
+        <h1>Formulario de contacto</h1>
+        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+        
+        
+      <form action="submeter-formulario.php" method="post">
+        
+        
+        <p>
+          <label for="nombre" class="colocar_nombre">Nombre
+          <span class="obligatorio">*</span>
+          </label>
+          <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+        </p>
+        
+        <p>
+        <label for="email" class="colocar_email">Email
+        <span class="obligatorio">*</span>
+        </label>
+        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+        </p>
+        
+        <p>
+        <label for="telefone" class="colocar_telefono">Teléfono
+        </label>
+        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+        </p>
+        
+        <p>
+        <label for="website" class="colocar_website">Sitio web
+        </label>
+        <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+        </p>
+        
+        <p>
+        <label for="asunto" class="colocar_asunto">Asunto
+        <span class="obligatorio">*</span>
+        </label>
+        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+        </p>
+        
+        <p>
+        <label for="mensaje" class="colocar_mensaje">Mensaje
+        <span class="obligatorio">*</span>
+        </label>                     
+                                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                      </p>  
+        
+        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+        
+        <p class="aviso">
+        <span class="obligatorio"> * </span>los campos son obligatorios.
+        </p>
+        
+      </form>
+    </div>
+  </div>
 
-            <!-- GRID JUGOS & BEBIDAS -->
-            <div id="bebidas">
-              <div class="beb1"> </div>
-              <div class="beb2"> 
-                <p class="copoazu">Copoazu</p>
-                <p class="txtCopo">Extracto de Zanahoria & pepino</p>
-                <button type="button" class="botonCinco btn btn-outline-secondary">Agregar</button>
-              </div>
-              <div class="beb3"> </div>
-              <div class="beb4"> </div>
-              <div class="beb5"> </div>
-              <div class="beb6"> </div>
-              <div class="beb7"> 
-                <p class="gulupa">Gulupa</p>
-                <p class="txtGulu">Arazá, banano, hierbabuena.</p>
-                <button type="button" class="botonCinco btn btn-outline-secondary">Agregar</button>               
-              </div>
-              <div class="beb8"> </div>
-              <div class="beb9"> 
-                <p class="thaiTea">Thai Tea</p>
-                <p class="txtThai">Té de flores con infusión de limonaria y lychees.</p>
-                <button type="button" class="botonCinco btn btn-outline-secondary">Agregar</button>
-              </div>
-            </div> 
-            <!-- GRID JUGOS & BEBIDAS -->   
-               
-            <!--BS-->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-            <!--BS-->
 
-            <!--FOOTER-->
-            <footer id="footer">
-              <div class="txtRedes">Siguenos en </div>
 
-              <div class="redes">
-                <a class="fa-brands fa-instagram" href="https://www.instagram.com/?hl=es-la" target="_blank"></a>
-                <a class="fa-brands fa-facebook" href="https://www.facebook.com/?hl=es-la" target="_blank"></a>
-                <a class="fa-brands fa-twitter" href="https://www.twitter.com/?hl=es-la" target="_blank"></a>
-              </div>
+  <div id="fondoContacto">
+    <p>Formulario de contacto</p>
+    <p>Escríbenos y en breve los pondremos en contacto contigo</p>
 
-              <div class="txtDer">@ Todos los derechos reservados "BAMBOO"</div>
-            </footer>
-            <!--FOOTER-->
+    <p class="txtFormulario">Formulario de contacto</p>
+    <input type="text" name="introducir_nombre" class="nombre" required="obligatorio" placeholder="Escribe tu nombre">
 
-        </body>
+    <p class="txtFormulario">Formulario de contacto</p>
+    <input type="text" name="introducir_Telefono" class="nombre" required="obligatorio" placeholder="Escribe tu Telefono">
+
+    <p class="txtFormulario">Formulario de contacto</p>
+    <input type="text" name="introducir_Email" class="nombre" required="obligatorio" placeholder="Escribe tu E-mail">
+
+    <p class="txtFormulario">Formulario de contacto</p>
+    <input type="text" name="introducir_Asunto" class="nombre" required="obligatorio" placeholder="Escribe tu Asunto">
+    
+    <p class="txtFormulario">Formulario de contacto</p>
+    <textarea name="introducir_mensaje" class="texto_mensaje" class="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+    <button type="submit" name="enviar_formulario" class="enviar"><p>Enviar</p></button>
     
 
+  </div>
 
+  <!-- FORMULARIO DE CONTACTO -->
+
+  
+
+
+
+
+
+
+
+         
+  <!--FOOTER-->
+       <footer id="footer" class="clearFix">
+        <div class="txtRedes">Siguenos en </div>
+
+        <div class="redes">
+          <a class="fa-brands fa-instagram" href="https://www.instagram.com/?hl=es-la" target="_blank"></a>
+          <a class="fa-brands fa-facebook" href="https://www.facebook.com/?hl=es-la" target="_blank"></a>
+          <a class="fa-brands fa-twitter" href="https://www.twitter.com/?hl=es-la" target="_blank"></a>
+        </div>
+
+        <div class="txtDer">@ Todos los derechos reservados "BAMBOO"</div>
+      </footer> 
+  <!--FOOTER-->    
+
+
+  <!--  BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!--  BOOSTRAP -->
+
+
+  <!--  JAVASCRIPT -->
+      <script src="script2.js"></script>  
+  <!-- JAVASCRIPT -->
+            
+  </body>
 </html>
 
 
+
+
+
+
+<!-- MODELO CARD -->
+
+  <!--  <div id="containerColumn" class="carta">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="img/oriental 14.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-muted">Precio</small>
+                                <button type="button" class="btn btn-secondary">Agregar</button>
+                              </p>
+                              
+                            </div>
+                          </div>
+                        </div>
+                    </div>    
+                </div> -->
+
+<!-- MODELO CARD -->

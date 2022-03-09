@@ -1,97 +1,107 @@
 *{
-    margin: 0;
-    padding: 0;
-}
-//----/----/----/Bamboo/---/----/----//
-
-/* TEXTOS NAVBAR */
-.navbar-brand{
-    font-family: Ubuntu;
-    color: white;
-    font-size: 25px;
-}
-
-.nav-link{
-    font-family: Kaushan Script;
-    color: white;
-    font-size: 15px;
-
+	margin: 0;
+	padding: 0;
 }
 
 /* TEXTOS NAVBAR */
+    .navbar-brand {
+        font-family: Ubuntu;
+        color: white;
+        font-size: 25px;
+    }
+    
+    .nav-link {
+        font-family: Kaushan Script;
+        color: white;
+        font-size: 15px;
+    }
+    
+/* TEXTOS NAVBAR */
 
-#BannerBamboo{
-    background-image: url('../img/portada-asiatico.jpg');
+
+  #BannerBamboo {
+    background-image: url("../img/portada-asiatico.jpg");
     background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 400px;
-    width: auto;  
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
-    align-content:center;
-}
-
-.txtBamboo{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .txtBamboo {
     font-family: Ubuntu;
     color: white;
     font-size: 70px;
-
-    @media (max-width: 450px){	  
-        font-family: Ubuntu;
-        color: white;
-        font-size: 50px;
-     }	
-}
-
-#bannerDos{
-        height: 300px;
-        width: auto;
-        background-color:none;
-        display:flex;
-        flex-direction:row;
-        flex-wrap:wrap;
-        justify-content:center;
-        align-items:center;
-        align-content:center;
-        text-align: center;
-    .txtUno{
-        font-size: 40px;
-        text-align: center;
-        font-family: Ubuntu;
-
-        @media (max-width: 450px){
-            width: auto;
-            font-family: Ubuntu;
-            color: black;
-            font-size: 20px;
-         }
+  }
+  
+  @media (max-width: 450px) {
+    .txtBamboo {
+      font-family: Ubuntu;
+      color: white;
+      font-size: 50px;
     }
-    .txtDos{
-            width: 600px;
-            font-size: 25px;
-            text-align: center;
-            font-family: Kaushan Script;
-
-            @media (max-width: 450px){
-                width: auto;
-                font-family: Kaushan Script;
-                color: black;
-                font-size: 15px;
-            }
+  }
+  
+  #bannerDos {
+    height: 300px;
+    width: auto;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  
+  #bannerDos .txtUno {
+    font-size: 40px;
+    text-align: center;
+    font-family: Ubuntu;
+  }
+  
+  @media (max-width: 450px) {
+    #bannerDos .txtUno {
+      width: auto;
+      font-family: Ubuntu;
+      color: black;
+      font-size: 20px;
     }
-
-    @media (max-width: 450px){
-        width: auto;
-        height: 200px;
+  }
+  
+  #bannerDos .txtDos {
+    width: 600px;
+    font-size: 25px;
+    text-align: center;
+    font-family: Kaushan Script;
+  }
+  
+  @media (max-width: 450px) {
+    #bannerDos .txtDos {
+      width: auto;
+      font-family: Kaushan Script;
+      color: black;
+      font-size: 15px;
     }
+  }
+  
+  @media (max-width: 450px) {
+    #bannerDos {
+      width: auto;
+      height: 200px;
+    }
+  }
+  
 
-}
-
-#parent {
+/* GRID */
+  #parent {
     background-color: #e8e8e8;
     height: 600px;
     width: auto;
@@ -100,631 +110,470 @@
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-
-    @media (max-width: 450px){
-        width: auto;
-        height: 800px;
-        
-
-        display:flex;
-        flex-direction:column;
-        flex-wrap:nowrap;
-        justify-content:space-around;
-        align-items:center;
-        align-content:center;
-    } 
-
-   
-    
-    .div1 { grid-area: 1 / 1 / 4 / 4;
-        width: auto;
-        height: auto;
-        background-image: url('../img/manosuno.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        @media (max-width: 450px){
-            width: 440px;
-            height: 150px;
-        }
+  }
+  
+  @media (max-width: 450px) {
+    #parent {
+      width: auto;
+      height: 800px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
     }
-    .div2 { grid-area: 4 / 1 / 7 / 4;
-        width: auto;
-        height: auto;
-        background-image: url('../img/pescado.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;  
-
-        @media (max-width: 450px){
-            width: 440px;
-            height: 150px;
-        }
+  }
+  
+  #parent .div1 {
+    grid-area: 1 / 1 / 4 / 4;
+    width: auto;
+    height: auto;
+    background-image: url("../img/manosuno.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @media (max-width: 450px) {
+    #parent .div1 {
+      width: 440px;
+      height: 150px;
     }
-    .div3 { grid-area: 1 / 4 / 7 / 8;
-        width: auto;
-        height: auto;
-        background-image: url('../img/verdura.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+  }
+  
+  #parent .div2 {
+    grid-area: 4 / 1 / 7 / 4;
+    width: auto;
+    height: auto;
+    background-image: url("../img/pescado.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @media (max-width: 450px) {
+    #parent .div2 {
+      width: 440px;
+      height: 150px;
+    }
+  }
+  
+  #parent .div3 {
+    grid-area: 1 / 4 / 7 / 8;
+    width: auto;
+    height: auto;
+    background-image: url("../img/verdura.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @media (max-width: 450px) {
+    #parent .div3 {
+      width: 440px;
+      height: 150px;
+    }
+  }
+  
+  #parent .div4 {
+    grid-area: 1 / 8 / 4 / 12;
+    width: auto;
+    height: auto;
+    background-image: url("../img/especias.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @media (max-width: 450px) {
+    #parent .div4 {
+      width: 440px;
+      height: 150px;
+    }
+  }
+  
+  #parent .div5 {
+    grid-area: 4 / 8 / 7 / 12;
+    width: auto;
+    height: auto;
+    background-image: url("../img/cuchillo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @media (max-width: 450px) {
+    #parent .div5 {
+      width: 440px;
+      height: 150px;
+    }
+  }
+/* GRID */
 
-        @media (max-width: 450px){
-            width: 440px;
-            height: 150px;
-        }
-     }
-    .div4 { grid-area: 1 / 8 / 4 / 12;
-        width: auto;
-        height: auto;
-        background-image: url('../img/especias.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
 
-        @media (max-width: 450px){
-            width: 440px;
-            height: 150px;
-        }
-     }
-    .div5 { grid-area: 4 / 8 / 7 / 12;
-        width: auto;
-        height: auto;
-        background-image: url('../img/cuchillo.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; 
-
-        @media (max-width: 450px){
-            width: 440px;
-            height: 150px;
-        }
-    } 
-     
-     
-   
-}
-#txtDiv{
+/* TXT div */ 
+  #txtDiv {
     background-color: white;
     height: 250px;
     width: auto;
-    display:flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
-    align-content:center;
-
-    @media (max-width: 450px){
-        display:flex;
-        flex-direction:column;
-        flex-wrap:nowrap;
-        justify-content:center;
-        align-items:center;
-        align-content:center;
-
-       
-        width: auto;
-        height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  @media (max-width: 450px) {
+    #txtDiv {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: auto;
+      height: 150px;
     }
-
-    .txtDivUno{
-        font-size: 40px;
-        text-align: center;
-        font-family: Ubuntu;
-
-        @media (max-width: 450px){
-            width: auto;
-            font-family: Ubuntu;
-            color: black;
-            font-size: 22px;
-         }
-    }
-
-    .txtDivDos{
-        width: 600px;
-        font-size: 25px;
-        text-align: center;
-        font-family: Kaushan Script;
-
-        @media (max-width: 450px){
-            width: auto;
-            font-family: Kaushan Script;
-            color: black;
-            font-size: 17px;
-        }
-    }
-
-}
-
-#nuevosProductos{
-    background-color: #483131;
-   /*  background-image: url('../img/manos pan.jpg'); */
-    height: 400px;
-    width: auto;
-    background-color:none;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:nowrap;
-    justify-content:space-around;
-    align-items:center;
-    align-content:center;
-
-    @media (max-width: 450px){
-        height: 700px;
-        width: auto;
-        background-color: none;
-
-        display:flex;
-        flex-direction:column;
-        flex-wrap:wrap;
-        justify-content:space-around;
-        align-items:center;
-        align-content:center;
-        
-    }
-
-    .pastaUno{
-        border-radius: 20px;
-        background-image: url('../img/sushi-3.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 300px;
-        width: 300px;
-        display:flex;
-        flex-direction:row;
-        flex-wrap:nowrap;
-        justify-content:center;
-        align-items:flex-end;
-        align-content:center;
-
-        @media (max-width: 450px){
-            width: 440px;
-            height: 200px;
-        }   
-    }
-
-    .pastaDos{
-        border-radius: 20px;
-        background-image: url('../img/cocinero 2.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 300px;
-        width: 300px;
-        display:flex;
-        flex-direction:row;
-        flex-wrap:nowrap;
-        justify-content:center;
-        align-items:flex-end;
-        align-content:center;
-
-        @media (max-width: 450px){
-            width: 440px;
-            height: 200px;
-        }   
-    }
-
-    .pastaTres{
-        border-radius: 20px;
-        background-image: url('../img/oriental 10 .jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 300px;
-        width: 300px;
-        display:flex;
-        flex-direction:row;
-        flex-wrap:nowrap;
-        justify-content:center;
-        align-items:flex-end;
-        align-content:center;
-
-        @media (max-width: 450px){
-            width: 440px;
-            height: 200px;
-        }   
-    }
-
-    .txtPanbu{
-        font-size: 30px;
-        text-align: center;
-        font-family: Kaushan Script;
-        color: white;
-
-        @media (max-width: 450px){
-            font-size: 20px;
-            text-align: center;
-            font-family: Kaushan Script;
-            color: white;
-        } 
-    }
-}
-
-//----/----/----/Bamboo/---/----/----//
-
-
-//----/----/----/MENU/---/----/----//
-#menuUno{
-    background-image: url('../img/oriental 2.jpg');
-    background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    height: 400px;
-    width: auto;  
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:flex-start;
-    align-items:center;
-    align-content:center;
-
-    @media (max-width: 450px){	  
-        display:flex;
-        flex-direction:column;
-        flex-wrap:wrap;
-        justify-content:center;
-        align-items:center;
-        align-content:center;
-    }	
-
-    .txtMenuUno{
-        margin-left: 30px;
-        font-family: Ubuntu;
-        color: white;
-        font-size: 30px;
-
-        @media (max-width: 450px){	  
-            align-items: center; 
-        }	
-
-        .txtPersonal{
-            margin-left: 100px;
-            font-family: Kaushan Script;
-            color: white;
-            font-size: 25px;
-
-            @media (max-width: 450px){
-                margin-left: 0px;	  
-                align-items: center; 
-            }	
-        }
-        .botonUno{
-            margin-left: 250px;
-
-            @media (max-width: 450px){
-                margin-left: 20px;	  
-                
-            }
-        }
-    }
-}
-
-#menuBamboo{
-    margin-top: 20px;
-    background-image: url('../img/oriental 6.jpg');
-    background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    height: 400px;
-    width: auto;  
-
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:flex-end;
-    align-items:center;
-    align-content:center;
-
-    @media (max-width: 450px){
-        display:flex;
-        flex-direction:column;
-        flex-wrap:wrap;
-        justify-content:center;
-        align-items:center;
-        align-content:flex-end;
-          
-    }
-
-    .txtBamboo{
-        margin-left: 50px;
-        font-family: Ubuntu;
-        color: black;
-        font-size: 40px;
-
-        @media (max-width: 450px){
-            margin-left: 300px;   
-        }
-    }
-
-    .txtIngBamboo{
-        margin-left: 280px;
-        
-        font-family: Kaushan Script;
-        color: black;
-        
-        padding-top: 10px;
-        font-size: 20px;
-        width: 200px;
-
-       
-    }
-
-    .botonDos{
-        margin-left: 100px;
-    }
-}
-
-#menuBanh{
-    margin-top: 20px;
-    background-image: url('../img/oriental 5.jpg');
-    background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    height: 400px;
-    width: auto;  
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:flex-start;
-    align-items:center;
-    align-content:center;
-
-    
-    .txtBanh{
-        margin-left: 300px;
-        font-family: Ubuntu;
-        color: white;
-        font-size: 40px;
-    }
-
-    .txtIngBanh{
-        margin-left: 200px; 
-        width: 300px;
-        font-family: Kaushan Script;
-        color: white;
-        font-size: 25px;
-    }
-
-    .botonTres{
-        margin-left: 320px;
-    }
-}
-
-#menuSalad{
-    margin-top: 20px;
-    background-image: url('../img/oriental 12.jpg');
-    background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    height: 400px;
-    width: auto;  
-
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:flex-end;
-    align-items:center;
-    align-content:center;
-
-    .txtSalad{
-        margin-left: 50px;
-        font-family: Ubuntu;
-        color:white;
-        font-size: 40px;
-    }
-
-    .txtIngSalad{
-        margin-right: 50px; 
-        width: 300px;
-        font-family: Kaushan Script;
-        color: white;
-        font-size: 25px;
-    }
-
-    .botonCuatro{
-        margin-left: 100px;
-    }
-}
-
-.bebidas{
-    margin-top: 50px;
-    display:flex;
-    justify-content:center;
-    font-family: Ubuntu;
-    color: black;
+  }
+  
+  #txtDiv .txtDivUno {
     font-size: 40px;
+    text-align: center;
+    font-family: Ubuntu;
+  }
+  
+  @media (max-width: 450px) {
+    #txtDiv .txtDivUno {
+      width: auto;
+      font-family: Ubuntu;
+      color: black;
+      font-size: 22px;
+    }
+  }
+  
+  #txtDiv .txtDivDos {
+    width: 600px;
+    font-size: 25px;
+    text-align: center;
+    font-family: Kaushan Script;
+  }
+  
+  @media (max-width: 450px) {
+    #txtDiv .txtDivDos {
+      width: auto;
+      font-family: Kaushan Script;
+      color: black;
+      font-size: 17px;
+    }
+  }
+/* TXT div */ 
+ 
+  
+/* BANNER BOTONES */
+    #BannerBotones{
 
-}
-
-#bebidas {
-    margin-top: 50px;
-    background-color: pink;
-    height: 800px;
-    width: auto;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; 
-        }
-    
-    .beb1 { grid-area: 1 / 1 / 4 / 4; 
-        width: auto;
-        height: auto;
-        background-image: url('../img/fruta 1.jpg');
+        background-image: url("../img/oriental 12.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-    }
-    .beb2 { grid-area: 4 / 1 / 5 / 4; 
+
+
+        background-color: pink;
+        width: auto;
+        height: 400px;
+
         display:flex;
-        flex-direction:column;
+        flex-direction:row;
         flex-wrap:wrap;
-        justify-content:center;
+        justify-content:space-between;
         align-items:center;
         align-content:center;
-
-        width: auto;
-        height: auto;
-        background-color: white;
-
-        .copoazu{
-            font-family: Ubuntu;
-            color: black;
-            font-size: 30px;
-        }
-
-        .txtCopo{
-            font-family: Kaushan Script;
-            color: black;
-            font-size: 20px;
-        }
-
-        .botonCinco{
-            width: 60px;
-            height: 30px;
-            font-family: Ubuntu;
-            font-size: 10px;
-        }
     }
-    .beb3 { grid-area: 5 / 1 / 10 / 4; 
-        width: auto;
-        height: auto;
-        background-image: url('../img/jugo 5.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+
+    .txtBotonUno{
+        width: 300px;
+        height: 100px;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        font-family: Kaushan Script;
     }
-    .beb4 { grid-area: 1 / 4 / 7 / 7; 
-        width: auto;
-        height: auto;
-        background-image: url('../img/jugo 1.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+
+    .txtBotonDos{
+        width: 300px;
+        height: 100px;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        font-family: Kaushan Script;
     }
-    .beb5 { grid-area: 7 / 4 / 10 / 7; 
-        width: auto;
-        height: auto;
-        background-image: url('../img/jugo 9 .jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+
+    .btn-outline-secondary{
+            
+        width: 80px;
+        height: 30px;
+        font-family:Kaushan Script;
+        font-size: 1rem;
+        color:rgb(219, 210, 210);
     }
-    .beb6 { grid-area: 1 / 7 / 4 / 10;
-        width: auto;
-        height: auto;
-        background-image: url('../img/jugo 6.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .beb7 { grid-area: 4 / 7 / 5 / 10; 
-        display:flex;
-        flex-direction:column;
-        flex-wrap:wrap;
-        justify-content:center;
-        align-items:center;
-        align-content:center;
+/* BANNER BOTONES */
 
-        width: auto;
-        height: auto;
-        background-color: white;
 
-        .gulupa{
-            font-family: Ubuntu;
-            color: black;
-            font-size: 30px;
-        }
 
-        .txtGulu{
-            font-family: Kaushan Script;
-            color: black;
-            font-size: 20px;
-        }
 
-        .botonCinco{
-            width: 60px;
-            height: 30px;
-            font-family: Ubuntu;
-            font-size: 10px;
-        }
-
-    }
-    .beb8 { grid-area: 5 / 7 / 9 / 10; 
-        width: auto;
-        height: auto;
-        background-image: url('../img/jugo 11.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .beb9 { grid-area: 9 / 7 / 10 / 10; 
-        display:flex;
-        flex-direction:column;
-        flex-wrap:wrap;
-        justify-content:center;
-        align-items:center;
-        align-content:center;
-
-        width: auto;
-        height: auto;
-        background-color: white;
-
-        .thaiTea{
-            font-family: Ubuntu;
-            color: black;
-            font-size: 30px;
-        }
-
-        .txtThai{
-            font-family: Kaushan Script;
-            color: black;
-            font-size: 20px;
-        }
-
-        .botonCinco{
-            width: 60px;
-            height: 30px;
-            font-family: Ubuntu;
-            font-size: 10px;
-        }
-
-    }
-   
-//----/----/----/MENU/---/----/----//
-
-//----/----/----/FOOTER/---/----/----//
-#footer{
+/* CONTENEDOR CARDS JV */
+/* #containerColumn{
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
     justify-content:center;
     align-items:center;
     align-content:center;
+} */
+/* CONTENEDOR CARDS JV */
 
+/* CATALOGO */
+    .catalogo{
+      margin:20px auto;
+ 
+      width: 1240px;
+      height: auto;
+      
+      
+    }
+
+    .card:hover{
+      transform:scale(1.1) ;
+    }
+    .card{
+        background-color: rgb(219, 219, 219);
+        width: 400px;
+        height: 200px;   
+        margin: 5px;  
+        float: left;
+
+    }
+    
+    
+    .card-title{
+        font-family:Ubuntu;
+        font-size: 1.5rem;
+    }
+    
+    .card-text{
+        font-family:Kaushan Script;
+        font-size: 0.9rem;
+    }
+    
+    .text-muted{
+        font-family:Kaushan Script;
+        font-size: 0.7rem;
+        color:black;
+    }
+
+    .clearFix{
+      float: none;
+      clear: both;
+    }
+ 
+    
+/* CATALOGO */
+
+
+
+
+
+/* FOOTER */
+#footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     background-color: gray;
     width: auto;
     height: 100px;
+  }
+  
+  #footer .txtRedes {
+    font-family: Ubuntu;
+    color: white;
+    font-size: 20px;
+  }
+  
+  #footer .fa-brands {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+  }
+  
+  #footer .txtDer {
+    font-size: 10px;
+    color: white;
+  }
 
-    .txtRedes{
-        font-family: Ubuntu;
-        color: white;
-        font-size: 20px;
+  
+/* FOOTER */
+
+/* -----------------FUENTES----------------- */
+    /* Ubuntu */
+    /* Kaushan Script  */
+/* -----------------FUENTES----------------- */
+
+/* PAGINA DE CONTACTO */
+body{
+        height: 100%; 
+        
+      
+        background-image: url("../img/ill.jpeg");
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover; 
+    }
+    
+    
+    .contact_form{
+    width: 460px; 
+         height: auto;
+        margin: 80px auto;
+        border-radius: 10px;  
+        padding-top: 30px;
+        padding-bottom: 20px;  
+        background-color: #dba1a1; 
+        padding-left: 30px; 
+    }
+    
+    
+    input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+      margin-bottom: 20px; 
+    }
+    
+    
+    textarea{
+      background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+      margin-bottom: 20px; 
+      padding-top: 15px; 
+    }
+    
+    
+    label{
+      display: block; 
+    float: center; 
+    }
+    
+    
+    button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px; 
+    margin-bottom: 20px; 
+    margin-top: 10px; 
+    text-transform: uppercase;
+    background-color: #ab4493; 
+    border-color: #ab4493; 
+    border-style: solid; 
+    border-radius: 10px;
+    width: 420px;   
+      cursor: pointer;
+    }
+    
+    
+    button p{
+    color: #fff; 
+    }
+    
+    
+    span{
+    color: #ab4493; 
+    }
+    
+    
+    .aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+    }
+    
+    
+    h1{
+    font-size: 39px;  
+    text-align: letf; 
+    padding-bottom: 20px; 
+    color: #ab4493;
+    }
+    
+    
+    h3{
+    font-size: 16px; 
+    padding-bottom: 30px;
+    color: #0e0e0e;   
+    }
+    
+    
+    p{
+    font-size: 14px; 
+    color: #0e0e0e; 
+    }
+    
+    
+    ::-webkit-input-placeholder {
+     color: #a8a8a8;
+    }
+    
+    
+    ::-webkit-textarea-placeholder {
+     color: #a8a8a8;
+    }
+    
+    
+    .formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+    }
+    
+    
+    .formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
     }
 
-    .fa-brands{
-        color: white;
-        font-size: 20px;
-        margin: 10px;
-    }
 
-    .txtDer{
-        font-size: 10px;
-        color: white;
-    }
-}
-//----/----/----/FOOTER/---/----/----//
+   /*  ------------------------------ */
+
+   #fondoContacto{
+    margin: 80px auto;
+       width: 40%;
+       height: auto;
+       background-color: pink;
+       border-radius: 15px;
+       align-content: center;
+       text-align: center;
+
+       .txtFormulario{
+           text-align: left;
+           margin-left: 50px;
+       }
+
+       
+   }
+
+/* PAGINA DE CONTACTO */
