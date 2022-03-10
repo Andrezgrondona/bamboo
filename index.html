@@ -21,14 +21,12 @@
           <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="index.html">NOSOTROS</a>
+                <a class="nav-link active " aria-current="page" href="index.html">NOSOTROS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="menu.html">MENU</a>
+                <a class="nav-link " href="contacto.html">CONTACTO</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">CONTACTO</a>
-              </li>
+             
             
             </ul>
           </div>
@@ -84,15 +82,95 @@
     </div>
   <!-- BANNER CON BOTONES -->
 
+  <!-- CATALOGO MENU COMIDA / BEBIDA -->  
+      <div class="catalogo"></div>
+  <!-- CATALOGO MENU COMIDA / BEBIDA -->  
 
+  <div class="poke">Escoge tu poke con los ingredientes que quieras!</div>
+
+  <!-- PREPARA TU POKE -->
+  <form id="bannerPoke">
+    <div class="ingredientes">
+      <p>
+        <div class="txtBase">Base</div>
+        <div class="tema1">Tallarines</div>
+        <input type="checkbox" value="Tallarines" id="Tallarines" class="valores"> 
+      </p>
+
+      <p>
+        <div class="tema2">Arroz</div>
+        <input type="checkbox" value="Arroz" id="Arroz" class="valores"> 
+      </p>
+
+      <p>
+        <div class="tema3">Noodles</div>
+        <input type="checkbox" value="Noodles" id="Noodles" class="valores"> 
+      </p>
+
+
+      
+    </div>
+
+
+    <div class="ingredientes">
+      <p>
+        <div class="txtBase">Proteina</div>
+        <div class="tema1">Carne</div>
+        <input type="checkbox" value="Carne" id="Carne" class="valores"> 
+      </p>
+
+      <p>
+        <div class="tema2">Salmon</div>
+        <input type="checkbox" value="Salmon" id="Salmon" class="valores"> 
+      </p>
+
+      <p>
+        <div class="tema3">Tofu</div>
+        <input type="checkbox" value="Tofu" id="Tofu" class="valores"> 
+      </p>
+
+      
+    </div>
+
+
+    <div class="ingredientes">
+      <p>
+        <div class="txtBase">Vegetales</div>
+        <div class="tema1">Cebolla y Zanaoria</div>
+        <input type="checkbox" value="Cebolla y Zanaoria" id="Cebolla y Zanaoria" class="valores"> 
+      </p>
+
+      <p>
+        <div class="tema2">Apio y zuchini</div>
+        <input type="checkbox" value="Apio y zuchini" id="Apio y zuchini" class="valores"> 
+      </p>
+
+      <p>
+        <div class="tema3">Pimenton y Brocoli</div>
+        <input type="checkbox" value="Pimenton y Brocoli" id="Pimenton y Brocoli" class="valores"> 
+      </p>
+ 
+    </div>
+
+  </form>
+
+  <p class="botonOrden">  
+    <button type="button" id="boton"  btn btn-secondary btn-sm>Preparar orden! </button>
+  </p>
 
 
     
-    <!-- <button class="categoria1">Comidas</button>
-    <button class="categoria2">Bebidas</button> -->
-
-    <div class="catalogo"></div>
+    <ul id="lista" class="listGroup"></ul>
     
+  <!-- PREPARA TU POKE -->
+
+
+
+
+
+
+
+
          
   <!--FOOTER-->
        <footer id="footer" class="clearFix">

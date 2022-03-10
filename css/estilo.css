@@ -312,18 +312,10 @@
 }
 
 /* BANNER BOTONES */
-/* CONTENEDOR CARDS JV */
-/* #containerColumn{
-    display:flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
-    align-content:center;
-} */
-/* CONTENEDOR CARDS JV */
-/* CATALOGO */
+/* CATALOGO MENU COMIDA / BEBIDA  */
 .catalogo {
+  overflow: hidden;
+  /* SIRVE PARA QUE NO SE PISE UNI CON OTRO DIV */
   margin: 20px auto;
   width: 1240px;
   height: auto;
@@ -362,7 +354,84 @@
   clear: both;
 }
 
-/* CATALOGO */
+/* CATALOGO MENU COMIDA / BEBIDA  */
+.poke {
+  background-color: none;
+  height: 50px;
+  width: 70%;
+  margin: 20px auto;
+  font-family: Kaushan Script;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* PREPARA TU POKE */
+#bannerPoke {
+  background-image: url("../img/comida2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+#bannerPoke .txtBase {
+  font-family: ubuntu;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#bannerPoke .tema1 {
+  font-family: Kaushan Script;
+  font-size: 1rem;
+  color: white;
+}
+
+#bannerPoke .tema2 {
+  font-family: Kaushan Script;
+  font-size: 1rem;
+  color: white;
+}
+
+#bannerPoke .tema3 {
+  font-family: Kaushan Script;
+  font-size: 1rem;
+  color: white;
+}
+
+.botonOrden {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  font-family: ubuntu;
+  font-size: 1rem;
+}
+
+#lista {
+  background-color: #6b2c2c;
+  height: auto;
+  width: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+/* PREPARA TU POKE */
 /* FOOTER */
 #footer {
   display: flex;
@@ -399,127 +468,11 @@
 /* Kaushan Script  */
 /* -----------------FUENTES----------------- */
 /* PAGINA DE CONTACTO */
-body {
-  height: 100%;
-  background-image: url("../img/ill.jpeg");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-}
-
-.contact_form {
-  width: 460px;
-  height: auto;
-  margin: 80px auto;
-  border-radius: 10px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  background-color: #dba1a1;
-  padding-left: 30px;
-}
-
-input {
-  background-color: #fbfbfb;
-  width: 408px;
-  height: 40px;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #ab4493;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-}
-
-textarea {
-  background-color: #fbfbfb;
-  width: 405px;
-  height: 150px;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #ab4493;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px;
-}
-
-label {
-  display: block;
-  float: center;
-}
-
-button {
-  height: 45px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  background-color: #ab4493;
-  border-color: #ab4493;
-  border-style: solid;
-  border-radius: 10px;
-  width: 420px;
-  cursor: pointer;
-}
-
-button p {
-  color: #fff;
-}
-
-span {
-  color: #ab4493;
-}
-
-.aviso {
-  font-size: 13px;
-  color: #0e0e0e;
-}
-
-h1 {
-  font-size: 39px;
-  text-align: letf;
-  padding-bottom: 20px;
-  color: #ab4493;
-}
-
-h3 {
-  font-size: 16px;
-  padding-bottom: 30px;
-  color: #0e0e0e;
-}
-
-p {
-  font-size: 14px;
-  color: #0e0e0e;
-}
-
-::-webkit-input-placeholder {
-  color: #a8a8a8;
-}
-
-::-webkit-textarea-placeholder {
-  color: #a8a8a8;
-}
-
-.formulario input:focus {
-  outline: 0;
-  border: 1px solid #97d848;
-}
-
-.formulario textarea:focus {
-  outline: 0;
-  border: 1px solid #97d848;
-}
-
-/*  ------------------------------ */
 #fondoContacto {
   margin: 80px auto;
   width: 40%;
   height: auto;
-  background-color: pink;
+  background-color: #9e9e9e;
   border-radius: 15px;
   align-content: center;
   text-align: center;
@@ -528,6 +481,7 @@ p {
 #fondoContacto .txtFormulario {
   text-align: left;
   margin-left: 50px;
+  font-family: ubuntu;
 }
 
 /* PAGINA DE CONTACTO */
