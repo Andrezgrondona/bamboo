@@ -385,7 +385,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  height: auto;
+  height: 300px;
   width: auto;
   margin: auto;
 
@@ -396,57 +396,30 @@
   align-items:center;
   align-content:center;
 
-  .txtBase{
+  .principal{
     font-family:ubuntu;
     font-size: 1.5rem;
     color: white;
   }
-  .tema1{
+  .txtIngredientres{
     font-family:Kaushan Script;
     font-size: 1rem;
     color: white;
   }
-  .tema2{
-    font-family:Kaushan Script;
-    font-size: 1rem;
-    color: white;
-  }
-  .tema3{
-    font-family:Kaushan Script;
-    font-size: 1rem;
-    color: white;
-  }
+  
 }
 
-.botonOrden{
-  margin:20px auto;
-   display:flex;
+.print-values{
+  
+  display:flex;
   flex-direction:row;
   flex-wrap:wrap;
   justify-content:space-around;
   align-items:center;
-  align-content:center; 
-
-  font-family:ubuntu;
-    font-size: 1rem;
-
-}
-
-#lista{
-  background-color: rgb(107, 44, 44);
-
-  height: auto;
-  width: auto;
-  margin: auto;
-
-  display:flex;
-  flex-direction:column;
-  flex-wrap:wrap;
-  justify-content:flex-start;
-  align-items:center;
   align-content:center;
-
 }
+
+
 
 
 /* PREPARA TU POKE */

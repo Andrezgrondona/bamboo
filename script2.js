@@ -67,22 +67,47 @@
 
 /* SELECCION MULTIPLE  DEL MENU*/
 
-    var boton = document.getElementById('boton');
-var lista = document.getElementById('lista');
-var checks = document.querySelectorAll('.valores');
+    var valueList= document.getElementById('valueList');
+    var text = '<span> Los ingredientes seleccionados son:</span>';
+    var listArray = [];
 
-boton.addEventListener('click', function(){
-    lista.innerHTML ='';
-    checks.forEach((e)=>{
-        if(e.checked == true){
-            var elemento =document.createElement('P');
-            elemento.innerHTML =e.value;
-            lista.appendChild(elemento);
+    valueList.innerHTML = ''
 
+    var checkboxes = document.querySelectorAll('.checkbox');
+    for(var checkbox of checkboxes) { checkbox.addEventListener('click', function(){
+
+        if(this.checked==true) {
+
+        listArray.push(this.value);
+        
+        valueList.innerHTML = `<div class="card text-center">
+                                    
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tu poke sera preparado</h5>
+                                        <p class="card-text">${text } </p>
+                                        <p class="card-text">${listArray} </p>
+                                        <a href="#" class="btn btn-primary">Agregar</a>
+                                    </div> 
+                                </div>`
+
+    } else {    
+
+    // ACCION DE REMOVER "UNCHECKED"
+
+        listArray  = listArray.filter(e => e !== this.value); 
+        valueList.innerHTML = `<div class="card text-center">
+                                    
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tu poke sera preparado</h5>
+                                        <p class="card-text">${text } </p>
+                                        <p class="card-text">${listArray} </p>
+                                        <a href="#" class="btn btn-primary">Comprar</a>
+                                    </div> 
+                                </div>`
         }
-    });
-});
-
+    })
+    }
+    
 /* SELECCION MULTIPLE  DEL MENU*/
 
 

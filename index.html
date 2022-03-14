@@ -89,78 +89,96 @@
   <div class="poke">Escoge tu poke con los ingredientes que quieras!</div>
 
   <!-- PREPARA TU POKE -->
-  <form id="bannerPoke">
-    <div class="ingredientes">
-      <p>
-        <div class="txtBase">Base</div>
-        <div class="tema1">Tallarines</div>
-        <input type="checkbox" value="Tallarines" id="Tallarines" class="valores"> 
-      </p>
 
-      <p>
-        <div class="tema2">Arroz</div>
-        <input type="checkbox" value="Arroz" id="Arroz" class="valores"> 
-      </p>
+  <div id="bannerPoke">
+   
+      <div class="ingredientes">
+        <div class="box">
+          <div class="principal">Base</div>
+          <input type="checkbox" value="Tallarines" class="checkbox" id="Tallarines">
+          <label for="Tallarines" class="txtIngredientres">Tallarines</label>
+        </div>
+        <div class="box">
+          <input type="checkbox" value="Arroz" class="checkbox" id="Arroz">
+          <label for="Arroz" class="txtIngredientres">Arroz</label>
+        </div>
+        <div class="box">
+          <input type="checkbox" value="Noodles" class="checkbox" id="Noodles">
+          <label for="Noodles" class="txtIngredientres">Noodles</label>
+        </div>
+        <div class="box">
+          <input type="checkbox" value="Ban mian" class="checkbox" id="Ban mian">
+          <label for="Noodles" class="txtIngredientres">Ban mian</label>
+        </div>
+        <div class="box">
+          <input type="checkbox" value="Fried sauce noodles" class="checkbox" id="Fried sauce noodles">
+          <label for="Noodles" class="txtIngredientres">Fried sauce noodles</label>
+        </div>
 
-      <p>
-        <div class="tema3">Noodles</div>
-        <input type="checkbox" value="Noodles" id="Noodles" class="valores"> 
-      </p>
 
 
+      </div>
       
-    </div>
-
-
-    <div class="ingredientes">
-      <p>
-        <div class="txtBase">Proteina</div>
-        <div class="tema1">Carne</div>
-        <input type="checkbox" value="Carne" id="Carne" class="valores"> 
-      </p>
-
-      <p>
-        <div class="tema2">Salmon</div>
-        <input type="checkbox" value="Salmon" id="Salmon" class="valores"> 
-      </p>
-
-      <p>
-        <div class="tema3">Tofu</div>
-        <input type="checkbox" value="Tofu" id="Tofu" class="valores"> 
-      </p>
-
+      <div class="ingredientes">
+        <div class="box">
+          <div class="principal">Proteina</div>
+          <input type="checkbox" value="Carne" class="checkbox" id="Carne">
+          <label for="Carne" class="txtIngredientres">Carne</label>
+        </div>
+        <div class="box">
+          <input type="checkbox" value="Salmon" class="checkbox" id="Salmon">
+          <label for="Salmon" class="txtIngredientres">Salmon</label>
+        </div>
+        <div class="box">
+          <input type="checkbox" value="Atun" class="checkbox" id="Atun">
+          <label for="Atun" class="txtIngredientres">Atun</label>
+        </div>
+        <div class="box">
+          <input type="checkbox" value="Camaron" class="checkbox" id="Atun">
+          <label for="Camaron" class="txtIngredientres">Camaron</label>
+        </div>
+        <div class="box">
+          <input type="checkbox" value="Tofu" class="checkbox" id="Tofu">
+          <label for="Tofu" class="txtIngredientres">Tofu</label>
+        </div>
+      </div>
       
+      <div class="ingredientes">
+        <div class="box">
+          <div class="principal">Verduras</div>
+          <input type="checkbox" value="Cebolla y Zanaoria" class="checkbox" id="Verdura">
+          <label for="Verduras" class="txtIngredientres">Cebolla y Zanaoria</label>
+        </div>
+        <div class="box">
+          <input type="checkbox" value="Apio y zuchini" class="checkbox" id="Verdura">
+          <label for="Verduras" class="txtIngredientres">Apio y zuchini</label>
+        </div>
+        <div class="box">
+          <input type="checkbox" value="Pimenton y Brocoli" class="checkbox" id="Verdura">
+          <label for="Verduras" Class="txtIngredientres">Pimenton y Brocoli</label>
+        </div>
+        <div class="box">
+          <input type="checkbox" value="Champiñones" class="checkbox" id="VerduraTres">
+          <label for="Verduras" Class="txtIngredientres">Champiñones</label>
+        </div>
+        <div class="box">
+          <input type="checkbox" value="Puerro y Rabano" class="checkbox" id="Verdura">
+          <label for="Verduras" Class="txtIngredientres">Puerro y Rabano</label>
+        </div>
+      </div>
     </div>
 
 
-    <div class="ingredientes">
-      <p>
-        <div class="txtBase">Vegetales</div>
-        <div class="tema1">Cebolla y Zanaoria</div>
-        <input type="checkbox" value="Cebolla y Zanaoria" id="Cebolla y Zanaoria" class="valores"> 
-      </p>
 
-      <p>
-        <div class="tema2">Apio y zuchini</div>
-        <input type="checkbox" value="Apio y zuchini" id="Apio y zuchini" class="valores"> 
-      </p>
+  </div>
 
-      <p>
-        <div class="tema3">Pimenton y Brocoli</div>
-        <input type="checkbox" value="Pimenton y Brocoli" id="Pimenton y Brocoli" class="valores"> 
-      </p>
- 
-    </div>
-
-  </form>
-
-  <p class="botonOrden">  
-    <button type="button" id="boton"  btn btn-secondary btn-sm>Preparar orden! </button>
-  </p>
+  
 
 
-    
-    <ul id="lista" class="listGroup"></ul>
+  <div class="print-values">
+    <p id="valueList"></p>
+  </div>
+
     
   <!-- PREPARA TU POKE -->
 
