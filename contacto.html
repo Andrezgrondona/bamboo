@@ -10,7 +10,7 @@
         <!-- LINK FONTASOME -->
         <title>Bamboo</title>
   </head>
-<body>
+<body >
    <!-- NAVBAR -->
    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <div class="container-fluid ">
@@ -34,47 +34,35 @@
   </nav>
 <!-- NAVBAR -->
 
-
-
-  <!-- FORMULARIO DE CONTACTO -->
+<!-- FORMULARIO DE CONTACTO -->
  
-
-
   <div id="fondoContacto">
     <p>Formulario de contacto</p>
     <p>Escríbenos y en breve los pondremos en contacto contigo</p>
 
     <p class="txtFormulario">* Nombre</p>
-    <input type="text" name="introducir_nombre" class="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+    <input id="nombre" type="text" name="introducir_nombre" class="nombre" required="obligatorio" placeholder="Escribe tu nombre">
 
     <p class="txtFormulario">* Telefono</p>
-    <input type="text" name="introducir_Telefono" class="nombre" required="obligatorio" placeholder="Escribe tu Telefono">
+    <input id="telefono" type="text" name="introducir_Telefono" class="nombre" required="obligatorio" placeholder="Escribe tu Telefono">
 
     <p class="txtFormulario">* E - Mail</p>
-    <input type="text" name="introducir_Email" class="nombre" required="obligatorio" placeholder="Escribe tu E-mail">
+    <input id="mail" type="text" name="introducir_Email" class="nombre" required="obligatorio" placeholder="Escribe tu E-mail">
 
-    <p class="txtFormulario">* Asunto</p>
-    <input type="text" name="introducir_Asunto" class="nombre" required="obligatorio" placeholder="Escribe tu Asunto">
+     <p class="txtFormulario">* Asunto</p>
+    <input id="asunto" type="text" name="introducir_Asunto" class="nombre" required="obligatorio" placeholder="Escribe tu Asunto">
     
     <p class="txtFormulario">* Mensaje</p>
-    <textarea name="introducir_mensaje" class="texto_mensaje" class="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+    <textarea name="introducir_mensaje" class="texto_mensaje" class="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
     
-    <div> hola</div>
+    <button onclick="guardarDatos()">Guardar</button>
     
-
   </div>
-
-  <!-- FORMULARIO DE CONTACTO -->
 
   
 
-
-
-
-
-
-
-         
+  <!-- FORMULARIO DE CONTACTO -->
+       
   <!--FOOTER-->
        <footer id="footer" class="clearFix">
         <div class="txtRedes">Siguenos en </div>
@@ -96,7 +84,7 @@
 
 
   <!--  JAVASCRIPT -->
-      <script src="script2.js"></script>  
+      <script src="contacto.js"></script>  
   <!-- JAVASCRIPT -->
             
   </body>
@@ -104,29 +92,4 @@
 
 
 
-
-
-
-<!-- MODELO CARD -->
-
-  <!--  <div id="containerColumn" class="carta">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="img/oriental 14.jpg" class="img-fluid rounded-start" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Precio</small>
-                                <button type="button" class="btn btn-secondary">Agregar</button>
-                              </p>
-                              
-                            </div>
-                          </div>
-                        </div>
-                    </div>    
-                </div> -->
-
-<!-- MODELO CARD -->
+ 

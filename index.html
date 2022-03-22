@@ -8,6 +8,7 @@
         <!-- LINK FONTASOME -->
         <script src="https://kit.fontawesome.com/70df5b46b1.js" crossorigin="anonymous"></script>
         <!-- LINK FONTASOME -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
         <title>Bamboo</title>
   </head>
 <body>
@@ -91,105 +92,48 @@
   <!-- PREPARA TU POKE -->
 
   <div id="bannerPoke">
-   
-      <div class="ingredientes">
-        <div class="box">
-          <div class="principal">Base</div>
-          <input type="checkbox" value="Tallarines" class="checkbox" id="Tallarines">
-          <label for="Tallarines" class="txtIngredientres">Tallarines</label>
-        </div>
-        <div class="box">
-          <input type="checkbox" value="Arroz" class="checkbox" id="Arroz">
-          <label for="Arroz" class="txtIngredientres">Arroz</label>
-        </div>
-        <div class="box">
-          <input type="checkbox" value="Noodles" class="checkbox" id="Noodles">
-          <label for="Noodles" class="txtIngredientres">Noodles</label>
-        </div>
-        <div class="box">
-          <input type="checkbox" value="Ban mian" class="checkbox" id="Ban mian">
-          <label for="Noodles" class="txtIngredientres">Ban mian</label>
-        </div>
-        <div class="box">
-          <input type="checkbox" value="Fried sauce noodles" class="checkbox" id="Fried sauce noodles">
-          <label for="Noodles" class="txtIngredientres">Fried sauce noodles</label>
-        </div>
-
-
-
+      <div id="ListBase">
+        <p class="Base"> Base</p>
       </div>
-      
-      <div class="ingredientes">
-        <div class="box">
-          <div class="principal">Proteina</div>
-          <input type="checkbox" value="Carne" class="checkbox" id="Carne">
-          <label for="Carne" class="txtIngredientres">Carne</label>
-        </div>
-        <div class="box">
-          <input type="checkbox" value="Salmon" class="checkbox" id="Salmon">
-          <label for="Salmon" class="txtIngredientres">Salmon</label>
-        </div>
-        <div class="box">
-          <input type="checkbox" value="Atun" class="checkbox" id="Atun">
-          <label for="Atun" class="txtIngredientres">Atun</label>
-        </div>
-        <div class="box">
-          <input type="checkbox" value="Camaron" class="checkbox" id="Atun">
-          <label for="Camaron" class="txtIngredientres">Camaron</label>
-        </div>
-        <div class="box">
-          <input type="checkbox" value="Tofu" class="checkbox" id="Tofu">
-          <label for="Tofu" class="txtIngredientres">Tofu</label>
-        </div>
+      <div id="ListProteina">
+        <p class="Base"> Proteina</p>
       </div>
-      
-      <div class="ingredientes">
-        <div class="box">
-          <div class="principal">Verduras</div>
-          <input type="checkbox" value="Cebolla y Zanaoria" class="checkbox" id="Verdura">
-          <label for="Verduras" class="txtIngredientres">Cebolla y Zanaoria</label>
-        </div>
-        <div class="box">
-          <input type="checkbox" value="Apio y zuchini" class="checkbox" id="Verdura">
-          <label for="Verduras" class="txtIngredientres">Apio y zuchini</label>
-        </div>
-        <div class="box">
-          <input type="checkbox" value="Pimenton y Brocoli" class="checkbox" id="Verdura">
-          <label for="Verduras" Class="txtIngredientres">Pimenton y Brocoli</label>
-        </div>
-        <div class="box">
-          <input type="checkbox" value="Champiñones" class="checkbox" id="VerduraTres">
-          <label for="Verduras" Class="txtIngredientres">Champiñones</label>
-        </div>
-        <div class="box">
-          <input type="checkbox" value="Puerro y Rabano" class="checkbox" id="Verdura">
-          <label for="Verduras" Class="txtIngredientres">Puerro y Rabano</label>
-        </div>
+      <div id="ListVerdura">
+        <p class="Base"> Verdura</p>
       </div>
-    </div>
-
-
-
   </div>
+
+  <div class="print-values">
+    <div id="valueList" ></div>
+  </div>
+
+  <div id="Vino">
+    <div class="txtVino">Quieres aprender a catar vinos!</div>
+     <div class="verificar">
+        <div class="img_vino"></div>
+          <div class="columnVino">
+            <p class="txtEdad">Ingresa tu edad</p>
+            <input type="txtver" id="edadVer"><br>
+            <input type="submit" value="verificar" onclick="mayorEdad()"> 
+            
+          </div>
+         
+     </div> 
+    
+    
+    
+  </div>
+
+<!-- TOASTIFY 
+  <button class="botontoast">toast</button>
+ TOASTIFY -->
+
+
+ 
 
   
 
-
-  <div class="print-values">
-    <p id="valueList"></p>
-  </div>
-
-    
-  <!-- PREPARA TU POKE -->
-
-
-
-
-
-
-
-
-         
+      
   <!--FOOTER-->
        <footer id="footer" class="clearFix">
         <div class="txtRedes">Siguenos en </div>
@@ -202,8 +146,12 @@
 
         <div class="txtDer">@ Todos los derechos reservados "BAMBOO"</div>
       </footer> 
-  <!--FOOTER-->    
+  <!--FOOTER-->  
+  
 
+  <!-- toastify -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <!-- toastify -->
 
   <!--  BOOSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -219,29 +167,3 @@
 
 
 
-
-
-
-<!-- MODELO CARD -->
-
-  <!--  <div id="containerColumn" class="carta">
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="img/oriental 14.jpg" class="img-fluid rounded-start" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Precio</small>
-                                <button type="button" class="btn btn-secondary">Agregar</button>
-                              </p>
-                              
-                            </div>
-                          </div>
-                        </div>
-                    </div>    
-                </div> -->
-
-<!-- MODELO CARD -->

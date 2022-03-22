@@ -394,6 +394,24 @@
   color: white;
 }
 
+#ListBase {
+  font-family: ubuntu;
+  font-size: 2rem;
+  color: white;
+}
+
+#ListProteina {
+  font-family: ubuntu;
+  font-size: 2rem;
+  color: white;
+}
+
+#ListVerdura {
+  font-family: ubuntu;
+  font-size: 2rem;
+  color: white;
+}
+
 .print-values {
   display: flex;
   flex-direction: row;
@@ -404,6 +422,55 @@
 }
 
 /* PREPARA TU POKE */
+/* VINOS */
+#Vino {
+  margin-top: 15px;
+  background-color: #2c0d0d;
+  width: auto;
+  height: 500px;
+}
+
+#Vino .img_vino {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/vinobnr.jpeg");
+  border-radius: 20px;
+  width: 60%;
+  height: 400px;
+}
+
+#Vino .txtVino {
+  text-align: center;
+  font-family: ubuntu;
+  font-size: 3rem;
+  color: white;
+}
+
+#Vino .verificar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+#Vino .columnVino {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+#Vino .txtEdad {
+  font-family: Kaushan Script;
+  font-size: 2rem;
+  color: white;
+}
+
 /* FOOTER */
 #footer {
   display: flex;
