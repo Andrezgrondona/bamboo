@@ -6,8 +6,14 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/estilo.css"> 
         <!-- LINK FONTASOME -->
-        <script src="https://kit.fontawesome.com/70df5b46b1.js" crossorigin="anonymous"></script>
-        <!-- LINK FONTASOME -->
+        <!-- <script src="https://kit.fontawesome.com/70df5b46b1.js" crossorigin="anonymous"></script> -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        <script src="https://kit.fontawesome.com/928514cf51.js" crossorigin="anonymous"></script>
+
+       
+        
+        <!-- LINK TOASIFY -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
         <title>Bamboo</title>
   </head>
@@ -90,7 +96,6 @@
   <div class="poke">Escoge tu poke con los ingredientes que quieras!</div>
 
   <!-- PREPARA TU POKE -->
-
   <div id="bannerPoke">
       <div id="ListBase">
         <p class="Base"> Base</p>
@@ -106,34 +111,90 @@
   <div class="print-values">
     <div id="valueList" ></div>
   </div>
+<!-- PREPARA TU POKE -->
 
+<!-- VINOS -->
   <div id="Vino">
     <div class="txtVino">Quieres aprender a catar vinos!</div>
      <div class="verificar">
         <div class="img_vino"></div>
           <div class="columnVino">
-            <p class="txtEdad">Ingresa tu edad</p>
-            <input type="txtver" id="edadVer"><br>
-            <input type="submit" value="verificar" onclick="mayorEdad()"> 
-            
-          </div>
-         
-     </div> 
-    
-    
-    
+            <p class="txtEdad">Inscribete!</p>
+            <!-- <input type="txtver" id="edadVer"><br> -->
+            <input id="nombre" type="text" name="introducir_nombre" class="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+            <input id="correo" type="text" name="introducir_Email" class="correo" required="obligatorio" placeholder="Escribe tu E-mail">
+            <input id="telefono" type="text" name="introducir_telefono" class="telefono" required="obligatorio" placeholder="Escribe tu telefono">
+            <input id="direccion" type="text" name="introducir_direccion" class="nombre" required="obligatorio" placeholder="Escribe tu direccion">
+              <div class="rowBotn">
+                <button onclick="guardarDatos()" class="botontoast">Inscribir</button>
+                 <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Terminos</button>    
+              </div>
+            <!-- <input type="submit" value="verificar" onclick="mayorEdad()">  --> 
+          </div>   
+     </div>  
   </div>
-
-<!-- TOASTIFY 
-  <button class="botontoast">toast</button>
- TOASTIFY -->
-
-
+<!-- VINOS -->
  
+  <!-- MODAL TERMINOS Y CONDICIONES -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Terminos y condiciones</p>
+      <p>Al acceder aa llenar el formulario usted (el usuario) acepta las condiciones 
+        y términos de uso que se indican a continuación. La navegación por este sitio le atribuye la condición de
+         usuario e implica la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas 
+         en estas condiciones generales de uso, por lo que, si no está de acuerdo con cualquiera de las condiciones 
+         aquí establecidas, no deberá usar este sitio Web. Bamboo SAS se reserva el derecho de cambiar, modificar, 
+         adicionar o remover, de manera unilateral, cualquier parte o la totalidad de los presentes términos y condiciones,
+          en cualquier tiempo y sin previo aviso. Dichas modificaciones serán publicadas por Bamboo en este sitio Web, y 
+          será responsabilidad del usuario revisar las condiciones generales de uso que sean aplicables cada vez que ingrese a este sitio.</p>
+    </div>
+  </div> 
+  <!-- MODAL TERMINOS Y CONDICIONES -->
+
+  <!-- ECO -->
+  <div id="eco">
+    <div class="txt_img">
+      <p class="txtPrinceco">Contribuimos con nuestro planeta</p>
+      <p class="txtparreco">La idea es realizar pequeños actos, que en conjunto, se sumen a una gran campaña a favor de nuestro planeta y den pie a grandes cambios</p>
+      <div class="roweco">
+        <i class="fa-solid fa-carrot">
+          <p class="txteco">Cultivos organicos</p>
+          <button type="button" class="btn btn-outline-success btncultivos">Ver</button>
+        </i>
+        <i class="fa-solid fa-recycle">
+          <p class="txteco">Recicale</p>
+          <button type="button" class="btn btn-outline-success btnreciclaje">Ver</button>
+        </i>
+        <i class="fa-solid fa-fish-fins">
+          <p class="txteco">Pesca responsable</p>
+          <button  type="button" class="btn btn-outline-success btnpesca">Ver</button>
+        </i>
+      </div>
+
+    </div>
+  </div>
+<!-- ECO -->
+
+  <!-- <button class="botonSweet">Inscribir</button> -->
+
+<!-- USUARIOS GANADORES -->
+
+<div id="BannerGanadores">Nuestros Usuarios Ganadores</div>
+
+<div class="postitionbuttom">
+  <button id="jsnBtn" type="button" class="btn btn-secondary btn-sm">Cargar Lista</button>
+</div>  
+
+<div class="bannerRes">
+  <div id="resultado"></div>   
+</div>
+
+<!-- USUARIOS GANADORES -->
 
   
-
-      
   <!--FOOTER-->
        <footer id="footer" class="clearFix">
         <div class="txtRedes">Siguenos en </div>
@@ -146,9 +207,10 @@
 
         <div class="txtDer">@ Todos los derechos reservados "BAMBOO"</div>
       </footer> 
-  <!--FOOTER-->  
-  
+  <!--FOOTER--> 
 
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- toastify -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <!-- toastify -->
@@ -159,8 +221,11 @@
 
 
   <!--  JAVASCRIPT -->
+      <script src="fetch.js"></script> 
       <script src="script2.js"></script>  
   <!-- JAVASCRIPT -->
+
+  
             
   </body>
 </html>

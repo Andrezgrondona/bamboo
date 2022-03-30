@@ -210,7 +210,7 @@
     }
   }
 /* GRID */
-
+/* ---------------------------------------------------- */
 
 /* TXT div */ 
   #txtDiv {
@@ -269,7 +269,7 @@
     }
   }
 /* TXT div */ 
- 
+/* ---------------------------------------------------- */ 
   
 /* BANNER BOTONES */
     #BannerBotones{
@@ -320,7 +320,7 @@
     }
 /* BANNER BOTONES */
 
-
+/* ---------------------------------------------------- */
 
 /* CATALOGO MENU COMIDA / BEBIDA  */
     .catalogo{
@@ -368,6 +368,7 @@
     
 /* CATALOGO MENU COMIDA / BEBIDA  */
 
+/* ---------------------------------------------------- */
 .poke{
   background-color: none;
   height: 50px;
@@ -377,6 +378,8 @@
   font-size: 2.5rem;
   text-align: center
 }
+
+/* ---------------------------------------------------- */
 
 /* PREPARA TU POKE */
 #bannerPoke{
@@ -425,7 +428,6 @@
   color: white;
 }
 
-
 .print-values{
   
   display:flex;
@@ -437,31 +439,111 @@
 }
 /* PREPARA TU POKE */
 
+/* ---------------------------------------------------- */
 /* VINOS */
- #Vino{
-   margin-top: 15px;
-   background-color: rgb(44, 13, 13);
-   width: auto;
-   height: 500px;
+#Vino{
+  margin-top: 15px;
+  background-color: rgb(83, 46, 46);
+  
+  width: auto;
+  height: 500px;
 
-   .img_vino{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../img/vinobnr.jpeg");
-    border-radius: 20px;
-    width: 60%;
+  .img_vino{
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url("../img/vinobnr.jpeg");
+   border-radius: 20px;
+   width: 60%;
+   height: 400px;
+  }
+
+  .txtVino{
+    text-align: center;
+    font-family:ubuntu;
+   font-size: 3rem;
+   color: white;
+  }
+
+  .verificar{
+   display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   justify-content:space-around;
+   align-items:center;
+   align-content:center;
+  }
+
+  .columnVino{
+    background-color:none;
     height: 400px;
+    width: 400px;
+   display:flex;
+   flex-direction:column;
+   flex-wrap:wrap;
+   justify-content:space-around;
+   align-items:center;
+   align-content:center;
+  }
+
+  .txtEdad{
+   font-family:Kaushan Script;
+   font-size: 2rem;
+   color: white;
+  }
+
+  .rowBotn{
+    background-color: none;
+    height: 50px;
+    width: 200px;
+   display:flex;
+   flex-direction:row;
+   flex-wrap:nowrap;
+   justify-content:space-around;
+   align-items:center;
+  }
+
+
+}
+/* VINOS */
+
+/* ---------------------------------------------------- */
+/* ECO */
+
+  #eco{
+    
+    padding-top: 25px;
+    background-color: none;
+    width: 70%;
+    height: 300px;
+    margin: auto;
+
+   .txt_img{
+      text-align: center;
+      background-color: none;
+      display:flex;
+      flex-direction:column;
+      flex-wrap:wrap;
+      justify-content:space-around;
+      align-items:center;
+      align-content:center;
+   } 
+
+   .txtPrinceco{
+    font-family:ubuntu;
+    font-size: 2rem;
    }
 
-   .txtVino{
+   .txtparreco{
+    font-family:Kaushan Script;
+    font-size: 20px;
+   }
+
+   .roweco{
      text-align: center;
-     font-family:ubuntu;
-    font-size: 3rem;
-    color: white;
-   }
-
-   .verificar{
+    background-color: none;
+    width: 700px;
+    
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -470,25 +552,142 @@
     align-content:center;
    }
 
-   .columnVino{
-    display:flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    justify-content:space-around;
-    align-items:center;
-    align-content:center;
+   .txteco{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    font-family:ubuntu;
+    
    }
 
-   .txtEdad{
+   .fa-solid{
+     margin-top: 10px;
+     font-size: 30px;
+     color: rgb(71, 102, 42);
+   }
+
+   .btn-outline-success{
+     font-size: 10px;
+   }
+  }
+
+/* ECO */
+
+/* ---------------------------------------------------- */
+/* USUARIOS GANADORES */
+
+#BannerGanadores{
+  background-color: none;
+  height: 50px;
+  width: 70%;
+  margin:20px auto;
+  font-family:Kaushan Script;
+  font-size: 2.5rem;
+  text-align: center
+}
+
+.postitionbuttom{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+}
+
+.bannerRes{
+  width: 95%;
+  margin: auto;
+  background-color:none;
+  text-align: center;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  align-items:center;
+  align-content:center;
+  margin-right: 10px;
+}
+
+.tituloCarta{
+  color:#2580db !important;
+  align-items: center;
+}
+
+.txtit{
+  font-size: 25px;
+    color: rgb(0, 0, 0);
+    
     font-family:Kaushan Script;
-    font-size: 2rem;
-    color: white;
 
-   }
+}
+
+.txInfo{
+  font-size: 13px;
+    color: rgb(0, 0, 0);
+    
+    font-family:ubuntu;
+
+}
+
+.carta:hover{
+  transform:none ;
+}
 
 
 
- }
+
+/* USUARIOS GANADORES */
+/* ---------------------------------------------------- */
+
+
+/* MODAL TERMINOS Y CONDICIONES */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #7a7979;
+      margin: 15% auto; /* 15% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+      text-align: center;
+
+    }
+
+    /* The Close Button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+/* MODAL  TERMINOS Y CONDICIONES*/
+
+/* ---------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------- */
 
 
 /* FOOTER */

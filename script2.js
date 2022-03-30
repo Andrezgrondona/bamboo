@@ -24,10 +24,11 @@
         listadoMenu.push(new Preparacion('Te Chai', 40, 12000, 'Bebida típica del sur de la India, mezcla de té con especias y hierbas aromáticas.​​ ', 'bebida', "img/chai.jpeg"));
         listadoMenu.push(new Preparacion('Vino(Temporada)', 120, 90000, 'Las variedades de Vino tinto con notas afrutadas y con baja concentración de taninos ', 'bebida', "img/vino.jpeg"));
 
-        lmenu = JSON.stringify(listadoMenu);
+        //lmenu = JSON.stringify(listadoMenu);
         //console.log(listadoMenu);/* texto */
         //console.log(lmenu);/* objeto */
-        
+
+    
 
 
     let comida = document.querySelector('.categoria1')
@@ -173,28 +174,65 @@
 
 /* ------------------------------ TOASTIFY -------------------------------------------  */
 
+    let botontoast = document.querySelector('.botontoast')
 
-let botontoast = document.querySelector('.botontoast')
+    botontoast.addEventListener('click', saludar)
 
-botontoast.addEventListener('click', saludar)
-
-function saludar (){
-    Toastify({
-        text: "hola janeth!!!",
-        className: "info",
-        style: {
-          background: "linear-gradient(to right, #00b09b, #96c93d)",
-        }
-      }).showToast();
-    
-}
-
-
+    function saludar (){
+        Toastify({
+            text: "Informacion Enviada!",
+            className: "info",
+            style: {
+            background: "linear-gradient(to right, #6b6b6b, #a18080)",
+            }
+        }).showToast();    
+    } 
 /* ------------------------------ TOASTIFY -------------------------------------------  */
+
+/* ------------------------------ SWEETALERT -----------------------------------------  */
+    let botonPesca = document.querySelector('.btnpesca')
+    botonPesca.addEventListener('click', info)
+
+    function info (){
+        Swal.fire({
+            title: 'Pesca Responsable',
+            text: 'Este tipo de prácticas procuran hacer uso de la pesca selectiva y de bajo impacto, con el fin de que el producto que se usa en los restaurantes no esté en peligro de extinción, respetando entre otras cosas que llegue a una apropiada talla de madurez.',
+            icon: 'info',
+            confirmButtonText: 'Cerrar'
+        })   
+    };
+
+    let botonCultivo= document.querySelector('.btncultivos')
+    botonCultivo.addEventListener('click', infocul)
+
+    function infocul (){
+        Swal.fire({
+            title: 'Cultivos Organicos',
+            text: 'Los cultivos orgánicos se perfilan como una opción en generación de productos alimenticios. Estos consisten en sistemas de producción de alimentos en los que los suelos de origen y las plantas están libres de fertilizantes químicos sintéticos y pesticidas.',
+            icon: 'info',
+            confirmButtonText: 'Cerrar'
+        })   
+    };
+
+    let botonsReciclaje = document.querySelector('.btnreciclaje')
+    botonsReciclaje.addEventListener('click', inforec)
+
+    function inforec (){
+        Swal.fire({
+            title: 'Reciclaje',
+            text: 'Residuos sólidos urbanos, que son, generalmente residuos reciclables (todo tipo de envases de vidrio, papel, etc.); Residuos grasos, procedentes de aceites y otras grasas empleados para cocinar, y. Residuos orgánicos (restos de las comidas elaboradas y residuos generados durante la elaboración de los platos).',
+            icon: 'info',
+            confirmButtonText: 'Cerrar'
+        })   
+    };
+
+
+/* ------------------------------ SWEETALERT -----------------------------------------  */
+
 /* ------------------------------ OPERADOR TERNARIO -------------------------------------------  */
 
-function mayorEdad(){
-    var edad = document.getElementById('edadVer').value;
+//function mayorEdad(){
+//    var edad = document.getElementById('edadVer').value;
    /*  if (edad > 18){
         alert("Si puedes asistir al evento, Pronto sabras mas sobre esta experiencia!")  
     }
@@ -203,10 +241,91 @@ function mayorEdad(){
     }
  */
 
-(edad > 18) ? alert("Si puedes asistir al evento, Pronto sabras mas sobre esta experiencia!"): alert("No tienes la edad para asisr al avento");
-
-}
+//(edad >= 18) ? alert("Si puedes asistir al evento, Pronto sabras mas sobre esta experiencia!"): alert("No tienes la edad para asistir al avento");
+//}
 
 
 /* ------------------------------ OPERADOR TERNARIO -------------------------------------------  */
 
+/* ------------------------------ GUARDAR DATOS CLIENTE (VINO)---------------------------------  */
+
+const traerStorage = () => localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : [];
+      const users = traerStorage();
+
+      users.innerHTML = ''
+
+    function guardarDatos() {
+
+        const anombre = document.getElementById("nombre").value;
+        const aemail = document.getElementById("correo").value;
+        const atelefono = document.getElementById("telefono").value;
+        const adireccion = document.getElementById("direccion").value;
+
+        const user = { "nombre": anombre, "mail":aemail, "telefono":atelefono, "direccion":adireccion};
+
+        users.push(user);
+
+        localStorage.setItem("users", JSON.stringify(users));
+
+    }
+
+/* ------------------------------ GUARDAR DATOS CLIENTE (VINO)---------------------------------  */
+
+/* ------------------------------ MODAL TERMINOS Y CONDICIONES ---------------------------------  */
+        // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    } 
+
+/* ------------------------------ MODAL TERMINOS Y CONDICIONES ---------------------------------  */
+
+/* ------------------------------ FETCH,JSON ---------------------------------  */
+
+ let btnUsers = document.getElementById('jsnBtn')
+    btnUsers.addEventListener('click', cargarJSON);
+
+        function cargarJSON(){
+            fetch('users.json')
+            .then(function(res){
+                console.log(res);
+                return res.json();
+            })
+            .then(function(data){
+                let html = '';
+                data.forEach(function(Ganador){
+                    html += `
+                    <div class="carta card border-dark mb-3" style="max-width: 14rem;">
+                        <div class=" tituloCarta card-body text-dark">
+                        <img src="img/avatar.png" height="70px" width="80px" class="">
+                            <h5 class=" txtit card-title">${Ganador.name}</h5>
+                            <p class="txInfo card-text"> ${Ganador.email} </p>           
+                        </div>
+                    </div>       
+                             `;
+                
+                    })
+                    document.getElementById('resultado').innerHTML=html;
+            })  
+        }
+ /* ------------------------------ FETCH,JSON ---------------------------------  */      
