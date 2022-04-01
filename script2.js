@@ -145,12 +145,13 @@
 
         listArray.push(this.value);
         
-        valueList.innerHTML = `<div class="card text-center">                                  
+        valueList.innerHTML = `<div class="preparar card text-center">                                  
                                     <div class="card-body">
                                         <h5 class="card-title">Tu poke sera preparado</h5>
-                                        <p class="card-text">${text } </p>
-                                        <p class="card-text">${listArray} </p>
-                                        <button type="button" id="btnRegistrar">registrar</button>
+                                        <p class="txtPreparar card-text">${text } </p>
+                                        <p class="txtPrepararArray card-text">${listArray} </p>
+                                        <p class="txtPreparar card-text">Muestra al personal tu eleccion</p>
+                                        
                                     </div> 
                                 </div>`
 
@@ -159,18 +160,19 @@
     // ACCION DE REMOVER "UNCHECKED"
 
         listArray  = listArray.filter(e => e !== this.value); 
-        valueList.innerHTML = `<div class="card text-center">                                  
+        valueList.innerHTML = `<div class=" preparar card text-center">                                  
                                     <div class="card-body">
-                                        <h5 class="card-title">Tu poke sera preparado</h5>
+                                        <h5 class="txtPreparar  card-title">Tu poke sera preparado</h5>
                                         <p class=  "card-text">${text } </p>
-                                        <p class= id="kard" class "card-text">${listArray} </p>
-                                        <button onclick="guardarCard()" type="button" id="btnRegistrar">registrar</button>
+                                        <p class= id="kard" class " txtPrepararArray card-text">${listArray} </p>
+                                        <p class="txtPreparar card-text">Muestra al personal tu eleccion</p>
                                     </div> 
                                 </div>`
             }
         })
     }
 /* ------------------------------ SELECCION MULTIPLE  DEL MENU ----------------------------------------  */
+
 
 /* ------------------------------ TOASTIFY -------------------------------------------  */
 
@@ -317,9 +319,9 @@ const traerStorage = () => localStorage.getItem('users') ? JSON.parse(localStora
                     html += `
                     <div class="carta card border-dark mb-3" style="max-width: 14rem;">
                         <div class=" tituloCarta card-body text-dark">
-                        <img src="img/avatar.png" height="70px" width="80px" class="">
+                        <img src="${Ganador.imagen}" height="120px" width="170px" class="">
                             <h5 class=" txtit card-title">${Ganador.name}</h5>
-                            <p class="txInfo card-text"> ${Ganador.email} </p>           
+                            <p class="txInfo card-text"> ${Ganador.valor} </p>           
                         </div>
                     </div>       
                              `;

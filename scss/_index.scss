@@ -12,9 +12,15 @@
     
     .nav-link {
         font-family: Kaushan Script;
-        color: white;
+        color: rgb(185, 182, 182);
         font-size: 15px;
     }
+
+    .bg-light {
+      background-color: #95aec8 !important;
+    }
+
+  
     
 /* TEXTOS NAVBAR */
 
@@ -278,12 +284,9 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
-
         background-color: pink;
         width: auto;
         height: 400px;
-
         display:flex;
         flex-direction:row;
         flex-wrap:wrap;
@@ -340,7 +343,6 @@
         height: 200px;   
         margin: 5px;  
         float: left;
-
     }
     
     
@@ -437,6 +439,35 @@
   align-items:center;
   align-content:center;
 }
+
+.preparar{
+  
+  background-color: #64676b;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 200px;   
+  margin: 5px;  
+  float: left;
+}
+
+.txtPreparar {
+  color: white;
+  font-family:ubuntu;
+  font-size: 20px;
+}
+
+.txtPrepararArray{
+  color: rgb(0, 0, 0);
+  font-family:Kaushan Script;
+  font-size: 20px;
+
+}
+
+
+
+
 /* PREPARA TU POKE */
 
 /* ---------------------------------------------------- */
@@ -502,8 +533,6 @@
    justify-content:space-around;
    align-items:center;
   }
-
-
 }
 /* VINOS */
 
@@ -572,62 +601,11 @@
   }
 
 /* ECO */
-
 /* ---------------------------------------------------- */
-/* USUARIOS GANADORES */
 
-#BannerGanadores{
-  background-color: none;
-  height: 50px;
-  width: 70%;
-  margin:20px auto;
-  font-family:Kaushan Script;
-  font-size: 2.5rem;
-  text-align: center
-}
-
-.postitionbuttom{
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  justify-content:center;
-  align-items:center;
-  align-content:center;
-}
-
-.bannerRes{
-  width: 95%;
-  margin: auto;
-  background-color:none;
-  text-align: center;
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  justify-content:space-around;
-  align-items:center;
-  align-content:center;
-  margin-right: 10px;
-}
-
-.tituloCarta{
-  color:#2580db !important;
-  align-items: center;
-}
-
-.txtit{
-  font-size: 25px;
-    color: rgb(0, 0, 0);
-    
-    font-family:Kaushan Script;
-
-}
-
-.txInfo{
-  font-size: 13px;
-    color: rgb(0, 0, 0);
-    
-    font-family:ubuntu;
-
+/* BANNER POSTRES */
+#jsnBtn{
+  font-family:ubuntu;
 }
 
 .carta:hover{
@@ -635,12 +613,80 @@
 }
 
 
+#BannerPostres{
+  border-radius: 30px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  align-content:center;
+  background-color: #d2dde5;
+  width: 95%;
+  height: auto;
+  margin: auto;
 
 
-/* USUARIOS GANADORES */
+  .imgPostre{
+    border-radius: 10px;
+    margin: 10px;
+    background-image: url("../img/postre 9 .jpeg");
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+    width: 350px;
+    height: 250px;
+  }
+
+  .parrPostre{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    margin: 20px;
+    background-color: #d2dde5;
+    width: 800px;
+    height: 250px;
+    font-family:Kaushan Script;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .txtit{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family:Kaushan Script;
+  }
+
+}
+
+.bannerPostres{
+  margin: auto;
+  background-color:none;
+  width: 98%;
+  height: auto;
+  text-align: center;
+}
+
+.resultado{ 
+  margin: auto;
+}
+
+.tituloCarta{
+  color:#46525f !important;
+  align-items: center;
+}
+
+.txtit{
+  font-size: 20px;
+    color: rgb(0, 0, 0);  
+    font-family:Kaushan Script;
+}
+
+/* BANNER POSTRES */
 /* ---------------------------------------------------- */
-
-
 /* MODAL TERMINOS Y CONDICIONES */
     .modal {
       display: none; /* Hidden by default */
@@ -682,12 +728,144 @@
     }
 
 /* MODAL  TERMINOS Y CONDICIONES*/
-
 /* ---------------------------------------------------- */
 
-
+/* PAGINA DE CONTACTO */
 
 /* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+/* FOOD TRUCK */
+
+
+
+/* FOOD TRUCK */
+/* ---------------------------------------------------- */
+#bannerTruck{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  align-items:center;
+  align-content:center;
+
+  /* background-color: #e7b75d; */
+   background-image: url("../img/ill 1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+ 
+  width: 98%;
+  height: auto;
+  margin: auto;
+
+.txt_food{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+
+  
+    color: rgb(221, 31, 6);  
+    font-family:Fredericka the Great;
+    font-size: 50px;
+
+  border-radius: 30px;
+  background-color: none;
+  width: 900px;
+  height: 200px;
+}
+
+.infoFood-uno{
+  border-radius: 30px;
+  margin-top: 25px;
+  background-color: none;
+  width: 900px;
+  height: 200px;
+
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+}
+
+.txtInfoFood{
+
+    color: rgb(0, 0, 0);  
+    font-family:ubuntu;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+
+.infoFood-dos{
+  border-radius: 30px;
+  margin-top: 25px;
+  background-color:none;
+  width: 900px;
+  height: 350px;
+}
+
+.advertencias{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  align-items:center;
+  align-content:center;
+}
+
+.adv{
+  margin-top: 10px;
+  font-size: 70px;
+  color: black;
+}
+
+.txtAdv{
+  font-family:ubuntu;
+    font-size: 15px;
+}
+
+
+
+.infoFood-tres{
+
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+
+
+
+  border-radius: 30px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  background-color: none;
+  width: 900px;
+  height: 300px;
+}
+
+.txt_food_tres{
+  color: rgb(221, 31, 6); 
+  text-align: center;
+  font-family:Fredericka the Great;
+    font-size: 35px;
+}
+
+
+
+}
+
+
+
+
+
 
 
 /* FOOTER */
@@ -719,8 +897,7 @@
     font-size: 10px;
     color: white;
   }
-
-  
+ 
 /* FOOTER */
 
 /* -----------------FUENTES----------------- */
@@ -743,9 +920,7 @@
            text-align: left;
            margin-left: 50px;
            font-family: ubuntu;
-       }
-
-       
+       }   
    }
 
 /* PAGINA DE CONTACTO */
