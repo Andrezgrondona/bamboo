@@ -1,9 +1,6 @@
 /* import Swal from '../node_modules/sweetalert2/src/sweetalert2' */
 
 
-
-
-
 let botonsweet = document.querySelector('.fruit')
 botonsweet.addEventListener('click', info)
 

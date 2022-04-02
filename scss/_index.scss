@@ -269,9 +269,10 @@
   @media (max-width: 450px) {
     #txtDiv .txtDivDos {
       width: auto;
+      height: 100px;
       font-family: Kaushan Script;
       color: black;
-      font-size: 17px;
+      font-size: 15px;
     }
   }
 /* TXT div */ 
@@ -295,6 +296,19 @@
         align-content:center;
     }
 
+    @media (max-width: 450px) {
+      #BannerBotones{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: auto;
+        height: 500px;
+      }
+    }
+
     .txtBotonUno{
         width: 300px;
         height: 100px;
@@ -302,6 +316,12 @@
         text-align: center;
         font-size: 30px;
         font-family: Kaushan Script;
+    }
+
+    @media (max-width: 450px) {
+      .txtBotonUno {
+        font-size: 20px;
+      }
     }
 
     .txtBotonDos{
@@ -313,6 +333,13 @@
         font-family: Kaushan Script;
     }
 
+    @media (max-width: 450px) {
+      .txtBotonDos {
+        font-size: 20px;
+      }
+    }
+
+
     .btn-outline-secondary{
             
         width: 80px;
@@ -321,6 +348,14 @@
         font-size: 1rem;
         color:rgb(219, 210, 210);
     }
+
+    @media (max-width: 450px) {
+      .btnMenu {
+        font-size: 10px;
+      }
+    }
+
+
 /* BANNER BOTONES */
 
 /* ---------------------------------------------------- */
@@ -331,7 +366,20 @@
       margin:20px auto;
       width: 1240px;
       height: auto;
-     
+    }
+    @media (max-width: 450px) {
+      .catalogo{
+        overflow: hidden;
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        align-items:center;
+        align-content:center;
+
+        width: auto;
+        height: auto;
+      }
     }
 
     .card:hover{
@@ -350,10 +398,27 @@
         font-family:Ubuntu;
         font-size: 1.5rem;
     }
+
+    @media (max-width: 450px) {
+      .card-title{
+        text-align: center;
+        font-family:Ubuntu;
+        font-size: 40px;
+      }
+    }
     
     .card-text{
         font-family:Kaushan Script;
         font-size: 0.9rem;
+    }
+
+    @media (max-width: 450px) {
+      .card-text{
+        text-align: center;
+        font-family:Kaushan Script;
+        font-size: 20px;
+        
+      }
     }
     
     .text-muted{
@@ -366,8 +431,20 @@
       float: none;
       clear: both;
     }
- 
+
     
+    @media (max-width: 450px) {
+      .img-fluid{
+        display: none;
+      }
+    }
+
+   
+    
+    
+
+
+
 /* CATALOGO MENU COMIDA / BEBIDA  */
 
 /* ---------------------------------------------------- */
@@ -381,6 +458,17 @@
   text-align: center
 }
 
+@media (max-width: 450px) {
+  .poke{
+    text-align: center;
+    font-family:Kaushan Script;
+    font-size: 30px;
+    height:100px;
+    
+  }
+}
+
+
 /* ---------------------------------------------------- */
 
 /* PREPARA TU POKE */
@@ -389,11 +477,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   height: 300px;
   width: auto;
   margin: auto;
-
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
@@ -465,8 +551,13 @@
 
 }
 
-
-
+@media (max-width: 450px) {
+  .card-title{
+    text-align: center;
+    font-family:ubuntu;
+    font-size: 30px; 
+  }
+}
 
 /* PREPARA TU POKE */
 
@@ -475,9 +566,12 @@
 #Vino{
   margin-top: 15px;
   background-color: rgb(83, 46, 46);
-  
   width: auto;
   height: 500px;
+
+ 
+
+  
 
   .img_vino{
    background-position: center;
@@ -494,6 +588,14 @@
     font-family:ubuntu;
    font-size: 3rem;
    color: white;
+  }
+
+  @media (max-width: 450px) {
+    .txtVino{
+      text-align: center;
+      font-family:ubuntu;
+      font-size: 30px; 
+    }
   }
 
   .verificar{
@@ -534,6 +636,13 @@
    align-items:center;
   }
 }
+
+@media (max-width: 450px) {
+  #Vino{
+    width: auto;
+    height: 850px;
+  }
+}
 /* VINOS */
 
 /* ---------------------------------------------------- */
@@ -572,7 +681,6 @@
      text-align: center;
     background-color: none;
     width: 700px;
-    
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -581,13 +689,32 @@
     align-content:center;
    }
 
+   @media (max-width: 450px) {
+    .roweco{
+      display:flex;
+      flex-direction:column;
+      flex-wrap:wrap;
+      justify-content:center;
+      align-items:center;
+      align-content:center;
+      width: auto;
+      height: 400px;
+    }
+  }
+
    .txteco{
     font-size: 15px;
     color: rgb(0, 0, 0);
     margin-top: 10px;
     font-family:ubuntu;
-    
    }
+
+   @media (max-width: 450px) {
+    .txteco{
+      font-size: 20px;
+      font-family:ubuntu;
+    }
+  }
 
    .fa-solid{
      margin-top: 10px;
@@ -600,17 +727,25 @@
    }
   }
 
+  @media (max-width: 450px) {
+    #eco{
+      width: auto;
+      height: 650px;
+    }
+  }
+
+
 /* ECO */
 /* ---------------------------------------------------- */
 
 /* BANNER POSTRES */
 #jsnBtn{
-  font-family:ubuntu;
-}
+    font-family:ubuntu;
+  }
 
-.carta:hover{
-  transform:none ;
-}
+  .carta:hover{
+    transform:none ;
+  }
 
 
 #BannerPostres{
@@ -634,8 +769,16 @@
     background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-    width: 350px;
+    width: 300px;
     height: 250px;
+  }
+
+  @media (max-width: 450px) {
+    .imgPostre{
+      width: 200px;
+    height: 200px;
+    margin: auto;
+    }
   }
 
   .parrPostre{
@@ -650,8 +793,16 @@
     width: 800px;
     height: 250px;
     font-family:Kaushan Script;
-    font-size: 24px;
+    font-size: 23px;
     text-align: center;
+  }
+
+  @media (max-width: 450px) {
+    .parrPostre{
+      font-family:Kaushan Script;
+    font-size: 20px;
+    margin: auto;
+    }
   }
 
   .txtit{
@@ -662,12 +813,26 @@
 
 }
 
+@media (max-width: 450px) {
+  #BannerPostres{
+    width: auto;
+    height: auto;
+  }
+}
+
 .bannerPostres{
   margin: auto;
   background-color:none;
   width: 98%;
   height: auto;
   text-align: center;
+}
+@media (max-width: 450px) {
+  .bannerPostres{
+    width: 250px;
+    height: auto;
+    margin: auto;
+  }
 }
 
 .resultado{ 
@@ -701,7 +866,6 @@
       background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     }
 
-    /* Modal Content/Box */
     .modal-content {
       background-color: #7a7979;
       margin: 15% auto; /* 15% from the top and centered */
@@ -709,10 +873,8 @@
       border: 1px solid #888;
       width: 80%; /* Could be more or less, depending on screen size */
       text-align: center;
-
     }
 
-    /* The Close Button */
     .close {
       color: #aaa;
       float: right;
@@ -729,17 +891,8 @@
 
 /* MODAL  TERMINOS Y CONDICIONES*/
 /* ---------------------------------------------------- */
-
-/* PAGINA DE CONTACTO */
-
-/* ---------------------------------------------------- */
-/* ---------------------------------------------------- */
 /* FOOD TRUCK */
 
-
-
-/* FOOD TRUCK */
-/* ---------------------------------------------------- */
 #bannerTruck{
     display:flex;
     flex-direction:column;
@@ -753,7 +906,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-  
+
     width: 98%;
     height: auto;
     margin: auto;
@@ -765,16 +918,22 @@
     justify-content:center;
     align-items:center;
     align-content:center;
-
-    
-      color: #3f5917;  
-      font-family:Fredericka the Great;
-      font-size: 50px;
-
+    color: #3f5917;  
+    font-family:Fredericka the Great;
+    font-size: 50px;
     border-radius: 30px;
     background-color: none;
     width: 900px;
     height: 200px;
+  }
+
+  @media (max-width: 450px) {
+    .txt_food{
+      font-family:Fredericka the Great;
+    font-size: 40px;
+    height: 200px;
+    width: 440px;
+    }
   }
 
   .infoFood-uno{
@@ -792,15 +951,27 @@
     align-content:center;
   }
 
-  .txtInfoFood{
+  @media (max-width: 450px) {
+    .infoFood-uno{
+      width: 300px;
+      height: auto;
+      margin: auto;
+    }
+  }
 
+  .txtInfoFood{
       color: rgb(0, 0, 0);  
       font-family:ubuntu;
       font-size: 30px;
       text-align: center;
-
   }
-
+  @media (max-width: 450px) {
+    .txtInfoFood{
+      font-family:ubuntu;
+      font-size: 20px;
+      height: 300px;
+    }
+  }
 
   .infoFood-dos{
     border-radius: 30px;
@@ -810,13 +981,35 @@
     height: 350px;
   }
 
+  @media (max-width: 450px) {
+    .infoFood-dos{
+      width: 440px;
+      height: 600px;
+ 
+    }
+  }
+
+
   .advertencias{
+     
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-around;
     align-items:center;
     align-content:center;
+  }
+
+  @media (max-width: 450px) {
+    .advertencias{
+      display:flex;
+      flex-direction:column;
+      flex-wrap:wrap;
+      justify-content:center;
+      align-items:center;
+      align-content:center;
+      margin-top: 5px;
+    }
   }
 
   .adv{
@@ -830,19 +1023,13 @@
       font-size: 15px;
   }
 
-
-
   .infoFood-tres{
-
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
     justify-content:center;
     align-items:center;
     align-content:center;
-
-
-
     border-radius: 30px;
     margin-bottom: 25px;
     margin-top: 25px;
@@ -851,13 +1038,30 @@
     height: 300px;
   }
 
+  @media (max-width: 450px) {
+    .infoFood-tres{
+      width: 400px;
+    }
+  }
+
   .txt_food_tres{
     color: #3f5917;
     text-align: center;
     font-family:Fredericka the Great;
       font-size: 35px;
   }
+
+  @media (max-width: 450px) {
+    .txt_food_tres{
+      font-family:Fredericka the Great;
+    font-size: 30px;
+    width: 400px;
+    }
+  }
 }
+/* FOOD TRUCK */
+/* ---------------------------------------------------- */
+
 
 
 /* FOOTER */
