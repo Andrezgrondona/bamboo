@@ -19,11 +19,8 @@
     .bg-light {
       background-color: #d8f0d6 !important;
     }
-
-  
-    
+   
 /* TEXTOS NAVBAR */
-
 
   #BannerBamboo {
     background-image: url("../img/portada-asiatico.jpg");
@@ -39,7 +36,7 @@
     align-items: center;
     align-content: center;
   }
-  
+
   .txtBamboo {
     font-family: Ubuntu;
     color: white;
@@ -217,7 +214,6 @@
   }
 /* GRID */
 /* ---------------------------------------------------- */
-
 /* TXT div */ 
   #txtDiv {
     background-color: white;
@@ -277,7 +273,6 @@
   }
 /* TXT div */ 
 /* ---------------------------------------------------- */ 
-  
 /* BANNER BOTONES */
     #BannerBotones{
 
@@ -339,7 +334,6 @@
       }
     }
 
-
     .btn-outline-secondary{
             
         width: 80px;
@@ -355,11 +349,8 @@
       }
     }
 
-
 /* BANNER BOTONES */
-
 /* ---------------------------------------------------- */
-
 /* CATALOGO MENU COMIDA / BEBIDA  */
     .catalogo{
       overflow: hidden; /* SIRVE PARA QUE NO SE PISE UNI CON OTRO DIV */ 
@@ -393,7 +384,6 @@
         float: left;
     }
     
-    
     .card-title{
         font-family:Ubuntu;
         font-size: 1.5rem;
@@ -406,7 +396,7 @@
         font-size: 40px;
       }
     }
-    
+
     .card-text{
         font-family:Kaushan Script;
         font-size: 0.9rem;
@@ -439,14 +429,7 @@
       }
     }
 
-   
-    
-    
-
-
-
 /* CATALOGO MENU COMIDA / BEBIDA  */
-
 /* ---------------------------------------------------- */
 .poke{
   background-color: none;
@@ -467,10 +450,7 @@
     
   }
 }
-
-
 /* ---------------------------------------------------- */
-
 /* PREPARA TU POKE */
 #bannerPoke{
   background-image: url("../img/comida2.jpeg");
@@ -558,9 +538,7 @@
     font-size: 30px; 
   }
 }
-
 /* PREPARA TU POKE */
-
 /* ---------------------------------------------------- */
 /* VINOS */
 #Vino{
@@ -568,10 +546,6 @@
   background-color: rgb(83, 46, 46);
   width: auto;
   height: 500px;
-
- 
-
-  
 
   .img_vino{
    background-position: center;
@@ -644,12 +618,10 @@
   }
 }
 /* VINOS */
-
 /* ---------------------------------------------------- */
 /* ECO */
 
   #eco{
-    
     padding-top: 25px;
     background-color: none;
     width: 70%;
@@ -733,11 +705,8 @@
       height: 650px;
     }
   }
-
-
 /* ECO */
 /* ---------------------------------------------------- */
-
 /* BANNER POSTRES */
 #jsnBtn{
     font-family:ubuntu;
@@ -746,7 +715,6 @@
   .carta:hover{
     transform:none ;
   }
-
 
 #BannerPostres{
   border-radius: 30px;
@@ -810,7 +778,6 @@
     color: rgb(0, 0, 0);
     font-family:Kaushan Script;
   }
-
 }
 
 @media (max-width: 450px) {
@@ -849,29 +816,28 @@
     color: rgb(0, 0, 0);  
     font-family:Kaushan Script;
 }
-
 /* BANNER POSTRES */
 /* ---------------------------------------------------- */
 /* MODAL TERMINOS Y CONDICIONES */
     .modal {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
+      display: none; 
+      position: fixed; 
+      z-index: 1; 
       left: 0;
       top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.4); /*  */
     }
 
     .modal-content {
       background-color: #7a7979;
-      margin: 15% auto; /* 15% from the top and centered */
+      margin: 15% auto; 
       padding: 20px;
       border: 1px solid #888;
-      width: 80%; /* Could be more or less, depending on screen size */
+      width: 80%; 
       text-align: center;
     }
 
@@ -989,7 +955,6 @@
     }
   }
 
-
   .advertencias{
      
     display:flex;
@@ -1061,9 +1026,6 @@
 }
 /* FOOD TRUCK */
 /* ---------------------------------------------------- */
-
-
-
 /* FOOTER */
 #footer {
     display: flex;
